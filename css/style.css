@@ -6,16 +6,12 @@
 
 img {
     max-width: 100%;
-    width: 30%;
 }
 
 .container {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-
-    border: 1px solid black;
-    min-height: 500px;
 }
 
 .section {
@@ -25,5 +21,120 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 5px;
 }
+
+.row {
+    width: calc(80%/3);
+    margin: 10px 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.heart:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.sales, .green, .green-1{
+    color: #ffff;
+}
+.sales {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    font-size: x-small;
+    background-color: #ff0000;
+}
+
+.green {
+    position: absolute;
+    bottom: 60px;
+    left: 25px;
+    background-color: #008000;
+    font-size: x-small;
+}
+
+.brand {
+    font-size: x-small;
+    position: absolute;
+    bottom: 30px;
+}
+
+.strong {
+    font-size: x-small;
+    position: absolute;
+    bottom: 20px;
+}
+
+
+.red {
+    color: #ff0000;
+    font-size: x-small;
+    position: absolute;
+    bottom: 10px;
+}
+
+.black {
+    text-decoration: line-through;
+    color: #808080;
+    font-size: x-small;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+}
+
+.brand-1, .front-1 {
+    font-size: x-small;
+}
+
+.brand-1 {
+    position: absolute;
+    bottom: 30px;
+}
+
+.front-1 {
+    position: absolute;
+    bottom: 20px;
+}
+
+.red-1 {
+    font-size: x-small;
+    color: #ff0000;
+    position: absolute;
+    bottom: 10px;
+}
+ 
+.green-1 {
+    background-color: #008000;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    font-size: x-small;
+}
+
+.reflex {
+    position: relative;
+}
+
+.front {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front:hover {
+    z-index: -1;
+}
+
